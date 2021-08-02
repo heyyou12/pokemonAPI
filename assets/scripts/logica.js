@@ -33,10 +33,10 @@ const paginacion=(data)=>{
     let prevDisabled = "";
     let nextDisabled = "";
 
-    data.prev == null ? prevDisabled = "disabled": prevDisabled="";
+    data.previous == null ? prevDisabled = "disabled": prevDisabled="";
     data.next == null ? nextDisabled = "disabled": nextDisabled="";
 
-    let html=`<li class="page-item ${prevDisabled}"><a class="page-link" onclick="getData('${data.prev}')">Previous</a></li>
+    let html=`<li class="page-item ${prevDisabled}"><a class="page-link" onclick="getData('${data.previous}')">Previous</a></li>
     <li class="page-item ${nextDisabled}"><a class="page-link" onclick="getData('${data.next}')">Next</a></li>;
     `;
 
